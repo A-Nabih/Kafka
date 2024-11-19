@@ -1,0 +1,11 @@
+version: "3"
+services:
+  kafkaTest1:
+    image: bitnami/kafka
+    container_name: kafkaTest1
+    ports:
+      - ${KAFKA_DEV_PORT}:9092
+    env_file:
+      - .env
+    volumes:
+      - ./kafka:/bitnami/kafka
