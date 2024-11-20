@@ -19,5 +19,5 @@ class KafkaConsumerClient:
 
 # Example usage
 if __name__ == "__main__":
-    consumer = KafkaConsumerClient(topic="gg", brokers=["localhost:9092", "localhost:9092"])
+    consumer = KafkaConsumerClient(topic="gg", brokers=["localhost:29092", "localhost:39092"])
     consumer.consume_messages()

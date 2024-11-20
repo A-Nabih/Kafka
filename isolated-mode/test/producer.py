@@ -18,6 +18,6 @@ class KafkaClient:
 
 # Example usage
 if __name__ == "__main__":
-    kafka_client = KafkaClient(brokers=["localhost:9092", "localhost:9093"])
+    kafka_client = KafkaClient(brokers=["localhost:29092", "localhost:39092"])
     kafka_client.send_message(topic="gg", message={"key": "ggggg"})
     print("Message sent to Kafka!")
